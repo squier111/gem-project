@@ -1,0 +1,110 @@
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: none;
+}
+html, body {
+	height: 100%;
+	margin:0;
+	color:#222222;
+	font: 15px/24px 'Faktum Test Regular', sans-serif;
+	background:#fff;
+	min-width: 320px;
+}
+img {
+	border-style:none;
+	vertical-align: top;
+}
+a {
+	color:#222;
+	outline:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+* {
+	outline:none;
+}
+input, textarea, select {
+	font:400 14px/14px 'Faktum Test Regular', sans-serif;
+	vertical-align:middle;
+	outline: none;
+	-webkit-appearance:none!important;
+	border-radius:0!important;
+	box-shadow: none!important;
+}
+form, fieldset {
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+h1 {
+	font:60px/62px 'Faktum Test Bold', sans-serif;
+	color: #202124;
+	margin: 0 0 10px;
+}
+h2 {
+	font: 40px/42px 'Faktum Test Bold', sans-serif;
+	color: #202124;
+	margin: 0 0 10px;
+}
+h3 {
+	font: 18px/22px 'Faktum Test Bold', sans-serif;
+	color: #202124;
+	margin: 0 0 10px;
+}
+p {
+	font: 16px/24px 'Faktum Test Regular', sans-serif;
+	margin: 0 0 27px;
+    padding: 0;
+    color: #50565A;
+}
+a {
+	color: #50565A;
+}
+header,
+nav,
+section,
+article,
+aside,
+main,
+footer,
+figure,
+menu,
+dialog {
+	display:block;
+}
+input[type="text"]:focus::-webkit-input-placeholder {
+ color:transparent!important;
+}
+input[type="text"]:focus:-moz-placeholder {
+ color:transparent!important;
+}
+input[type="text"]:focus:-ms-input-placeholder {
+ color:transparent!important;
+}
+input[type="text"]:focus::-moz-placeholder {
+ color:transparent!important;
+}
+textarea:focus::-webkit-input-placeholder {
+ color:transparent!important;
+}
+textarea:focus:-moz-placeholder {
+ color:transparent!important;
+}
+ textarea:focus:-ms-input-placeholder {
+ color:transparent!important;
+}
+textarea:focus::-moz-placeholder {
+ color:transparent!important;
+}
+strong {
+	font-family: 'proxima_nova_rgbold', sans-serif;
+}
+.center {
+	padding: 0 15px 0 15px;
+	position: relative;
+	max-width: 1200px;
+	min-width: 290px;
+	margin: 0 auto;
+}
