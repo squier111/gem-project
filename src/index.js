@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom'
 import App from './components/app';
 import 'bootstrap/dist/css/bootstrap.css';
+import './style-resources/default.scss'
 import './fonts/fonts.scss'
 import ErrorBoundry from './components/error-boundry';
 

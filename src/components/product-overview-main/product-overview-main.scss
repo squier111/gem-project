@@ -1,0 +1,88 @@
+@import '../../style-resources/mixins.scss';
+
+.product-overview-main {
+    .container {
+        padding: 0 90px;
+    }
+    .head {
+        margin: 0 0 82px;
+    }
+    .subtitle {
+        position: absolute;
+        top: -30px;
+        left: 12px;
+    }
+    .visual {
+        text-align: center;
+    }
+    .description-list {
+        padding: 5px 0 0 15px;
+        &>div {
+            &:before {
+                content: '';
+                opacity: 0;
+                @include transition;
+                position: absolute;
+                top: 50%;
+                margin: -5px 0 0 0;
+                right: -10px;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 10px solid #fff;
+                border-bottom: 10px solid transparent;
+            }
+            position: relative;
+            cursor: pointer;
+            @include transition;
+            padding: 25px 0 25px 18px;
+            margin: 0 18px -3px 0;
+            &:hover {
+                background: #fff;
+                -webkit-box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.1);
+                .read-more {
+                    opacity: 1;
+                    z-index: 0;
+                }
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+        }
+        .item1 {
+            h3, .read-more  {
+                color: #E71F64;
+            }
+        }
+        .item2 {
+            h3, .read-more  {
+                color: #848C12;
+            }
+        }
+        .item3 {
+            h3, .read-more  {
+                color: #F98C00;
+            }
+        }
+        .read-more {
+            opacity: 0;
+            z-index: -1;
+            position: relative;
+            @include transition;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        h3 {
+            font-size: 20px;
+            line-height: 22px;
+            margin: 0 0 6px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 19px;
+            color: #50565A;
+            margin: 0 24px 3px 0;
+        }
+    }
+}

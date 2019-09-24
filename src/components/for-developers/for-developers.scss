@@ -1,35 +1,66 @@
 @import '../../style-resources/mixins.scss';
-.main-screen {
-    position: relative;
-    min-height: 1034px;
-    padding: 250px 0 0 0;
-    .bg {
-        top: -15%;
-        right: -41%;
-        height: 1200px;
-        width: 1200px;
-        position: absolute;
-    }
-    p {
-        font-size: 20px;
-        line-height: 27px;
-        color: #797E82;
-        padding: 0 53px 0 0;
-    }
-    .holder {
-        padding: 0 60px 0 0;
-    }
-    .visual {
-        margin: -27px -79px 0 -92px;
-        img {
-            max-width: 100%;
-            height: auto;
+
+.nav-tabs {
+    margin: 0 15px 0 0;
+    padding-left: 35px!important;
+    overflow: hidden;
+    display: flex;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: none!important;
+    background: #132d46;
+    .nav-item {
+        position: relative;
+        color: #F4F6F8;
+        font-size: 18px;
+        line-height: 50px;
+        flex: 1 1 auto;
+        border: none;
+        &:last-child:after {
+            display: none;
+        }
+        a {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -9px;
+                width: 1px;
+                background: #1d446b;
+            }
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: block;
+            cursor: pointer;
+            padding: 0;
+            height: 50px;
+            border: none;
+            color: #F4F6F8;
+            text-align: center;
+            &.active {
+                color: #F4F6F8;
+                background: #1d446b;
+                &:after {display: none;}
+            }
         }
     }
-    .row > div {
+}
+.for-developers {
+    .subtitle {
+        padding: 14px 0 0 0;
+        margin: 0 0 23px;
+    }
+    min-height: 1000px;
+    .row {
+        align-content: center;
+        min-height: 985px;
+    }
+    .row > div  {
         padding: 0;
     }
     .btn-holder {
+        padding: 15px 0 0 0;
         span {
             display: inline-block;
             vertical-align: middle;
@@ -66,5 +97,8 @@
             opacity: 0.7;
             border-bottom-color: transparent;
         }
+    }
+    .info {
+        margin: 0 0 0 -12px;
     }
 }

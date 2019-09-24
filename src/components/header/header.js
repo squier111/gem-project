@@ -36,33 +36,31 @@ class Header extends Component {
                 </Link>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
-                    <Nav  navbar>
-                        <NavItem>
-                            <NavLink exact={true} to='/products' className="link">Products</NavLink>
-                        </NavItem>
+                    <Nav navbar>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret>
+                                Products
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                            <DropdownItem>
+                                <NavLink exact={true} to='/products' className="link">Onramp</NavLink>
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem>
+                                <NavLink exact={true} to='/products' className="link">Connect</NavLink>
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem>
+                                <NavLink exact={true} to='/products' className="link">API</NavLink>
+                            </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
                         <NavItem>
                             <NavLink exact={true} to='/security' className="link">Security</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink exact={true} to='/pricing' className="link">Pricing</NavLink>
                         </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                            Options
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                            <DropdownItem>
-                                Option 1
-                            </DropdownItem>
-                            <DropdownItem>
-                                Option 2
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>
-                                Reset
-                            </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
                     </Nav>
                     <div className="user-panel ml-auto">
                         <button className="sign-in-btn">Sign In</button>
