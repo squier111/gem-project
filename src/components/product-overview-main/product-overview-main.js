@@ -2,9 +2,11 @@ import React from 'react';
 import  './product-overview-main.scss';
 import { Container, Row, Col } from 'reactstrap';
 import {PHONEOWERVIEW} from '../../assets/Icons';
-import {ProductOverview} from '../../mocks'
+import {ProductOverview, Titles} from '../../mocks';
+import HeadSections from '../head-sections';
 
 const ProductOverviews = new ProductOverview();
+const title = new Titles();
 
 const ProductOverviewMain = () => {
 
@@ -23,13 +25,12 @@ const descriptions = ProductOverviews.description.map((item)=>{
         <Container style = {{maxWidth: "100%"}}>
             <Row className="head">
                 <Col xs="12" sm="6" md="5">
-                    <div className="holder">
-                        <span className="subtitle">Product Overview</span>
-                        <h2>Get up and running in an afternoon.</h2>
-                    </div>
+                    <HeadSections 
+                        subtitle= {title.BlockTitles[0].SubTitle} 
+                        title = {title.BlockTitles[0].Title}/>
                 </Col>
                 <Col xs="12" sm="6" md={{ size: 6, offset: 1 }}>
-                    <p>With our embeddable flows and API, your users can seamlessly connect their external crypto data and assets without ever leaving your app.</p>
+                    <p>{title.BlockTitles[0].Description}</p>
                 </Col>
             </Row>
             <Row>

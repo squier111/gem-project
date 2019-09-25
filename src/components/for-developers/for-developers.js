@@ -3,6 +3,11 @@ import  './for-developers.scss';
 import { Container, Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import {CODE} from '../../assets/Icons';
 import classnames from 'classnames';
+import {Titles} from '../../mocks';
+import HeadSections from '../head-sections';
+import ButtonsHolder from '../buttons-holder';
+
+const Title = new Titles();
 
 class ForDevelopers extends Component {
     constructor(props) {
@@ -71,13 +76,11 @@ class ForDevelopers extends Component {
                             </Col>
                             <Col xs="12" sm="6" md={{ size: 5, offset: 1 }}>
                                 <div className="info" >
-                                    <span className="subtitle">For Developers</span>
-                                    <h2>A few lines of code = beautiful flows. Get up and running in an afternoon.</h2>
-                                    <div className="btn-holder">
-                                        <button className="api-key-btn">Get API Keys →</button>
-                                        <span>or</span>
-                                        <button className="view">view the docs»</button>
-                                    </div>
+                                    <HeadSections 
+                                        subtitle= {Title.BlockTitles[10].SubTitle} 
+                                        title = {Title.BlockTitles[10].Title}
+                                        description = {Title.BlockTitles[10].Description}/>
+                                    <ButtonsHolder/>
                                 </div>
                             </Col>
                         </Row>
