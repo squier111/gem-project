@@ -43,15 +43,24 @@ class Header extends Component {
                             </DropdownToggle>
                             <DropdownMenu right>
                             <DropdownItem>
-                                <NavLink exact={true} to='/onramp' className="link">Onramp</NavLink>
+                                <NavLink exact={true} to='/onramp' className="link">
+                                    <span className="title" style={{color: '#D8D8D8'}}>Onramp</span>
+                                    <span className="description">The “add money” button for crypto.</span>
+                                </NavLink>
                             </DropdownItem>
                             <DropdownItem divider />
                             <DropdownItem>
-                                <NavLink exact={true} to='/connect' className="link">Connect</NavLink>
+                                <NavLink exact={true} to='/connect' className="link">
+                                    <span className="title" style={{color: '#848C12'}}>Connect</span>
+                                    <span className="description">Connect your users’ crypto exchange accounts to your app.</span>
+                                </NavLink>
                             </DropdownItem>
                             <DropdownItem divider />
                             <DropdownItem>
-                                <NavLink exact={true} to='/api' className="link">API</NavLink>
+                                <NavLink exact={true} to='/api' className="link">
+                                    <span className="title" style={{color: '#F98C00'}}>API</span>
+                                    <span className="description">Access user’s accounts across cryptocurrency exchanges through a single interface.</span>
+                                </NavLink>
                             </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>

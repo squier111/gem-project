@@ -1,0 +1,31 @@
+@import '../../style-resources/mixins.scss';
+
+.product-overview {
+    pre[class*="language-"] {
+        min-height: 340px;
+    }
+    .container {
+        padding: 0 90px;
+    }
+    .head {
+        text-align: center;
+        margin: 0 auto 63px;
+        max-width: 855px;
+        p {
+            padding: 11px 100px 0 100px;
+            text-align: left;
+        }
+    }
+    .arr {
+        text-align: center;
+    }
+    .content {
+        align-items: center;
+    }
+    .subtitle {
+        display: block;
+    }
+    .visual {
+        text-align: left;
+    }
+}

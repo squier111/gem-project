@@ -4,6 +4,7 @@ import Titles from './titles';
 import CompanysMocks from './companys-mocks';
 import FooterListMocks from './footer-list-mocks';
 import MainScreenMocks from './main-screen-mocks';
+import CodeMocks from './code-mocks';
 
 export {
     ProductOverview,
@@ -11,5 +12,6 @@ export {
     Titles,
     CompanysMocks,
     FooterListMocks,
-    MainScreenMocks
+    MainScreenMocks,
+    CodeMocks
 }

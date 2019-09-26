@@ -3,11 +3,14 @@ import  './for-developers.scss';
 import { Container, Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import {CODE} from '../../assets/Icons';
 import classnames from 'classnames';
-import {Titles} from '../../mocks';
+import {Titles, CodeMocks} from '../../mocks';
 import HeadSections from '../head-sections';
 import ButtonsHolder from '../buttons-holder';
+import CodeExample from '../code-example';
+
 
 const Title = new Titles();
+const Code = new CodeMocks();
 
 class ForDevelopers extends Component {
     constructor(props) {
@@ -26,7 +29,10 @@ class ForDevelopers extends Component {
           });
         }
       }
-    render() {
+
+    
+      render() {
+        const text = "<script src=“https://app.gem.co/GemInit.js” />\n<script>\n    const GC = new Gem.Connect({\n        key: <your_api_key>,\n        user: <user_email_or_id>,\n        redirect: <return_url_of_your_app>,\n    });\n    GC.open();\n</script>"
         return (
             <div className="for-developers" 
             style = {{
@@ -64,13 +70,13 @@ class ForDevelopers extends Component {
                                 </Nav>
                                 <TabContent activeTab={this.state.activeTab}>
                                     <TabPane tabId="1">
-                                        <img src={CODE} alt='img'/>
+                                        <CodeExample code={Code.code[0]}/>
                                     </TabPane>
                                     <TabPane tabId="2">
-                                        <img src={CODE} alt='img'/>
+                                       <CodeExample code= {Code.code[1]}/>
                                     </TabPane>
                                     <TabPane tabId="3">
-                                        <img src={CODE} alt='img'/>
+                                        <CodeExample code={Code.code[0]}/>
                                     </TabPane>
                                 </TabContent>
                             </Col>

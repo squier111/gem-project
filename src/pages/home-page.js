@@ -18,7 +18,8 @@ const HomePage = () => {
           Title = {mainScreenDatas.Datas[0].Title}
           Description = {mainScreenDatas.Datas[0].Description}
           Image = {mainScreenDatas.Datas[0].Image}
-          BgImage ={mainScreenDatas.Datas[0].BgImage} 
+          BgImage ={mainScreenDatas.Datas[0].BgImage}
+          Name = {''} 
         />
         <ProductOverviewMain/>
         <ForDevelopers/>

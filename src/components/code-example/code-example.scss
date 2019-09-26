@@ -1,0 +1,29 @@
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #1d446b !important;
+    margin: 0 !important;
+    color: #F4F6F8 !important;
+    font-size: 14px !important;
+    text-shadow: none!important;
+}
+pre[class*="language-"] {
+    max-height: 510px;
+    border-radius: 7px;
+    box-shadow: 1px 35px 19px -7px rgba(0, 0, 0, 0.2);
+}
+.token.operator,
+.token.entity,
+.token.url,
+.token.punctuation,
+.language-css .token.string,
+.style .token.string {
+    color: #F4F6F8 !important;
+    background: transparent !important;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #F4F6F8 !important;
+}

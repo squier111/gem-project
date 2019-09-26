@@ -3,12 +3,12 @@ import './main-screen.scss';
 import { Container, Row, Col } from 'reactstrap';
 import ButtonsHolder from '../buttons-holder';
 
-const MainScreen = ({Subtitle, Title, Description, Image, BgImage}) => {
+const MainScreen = ({Subtitle, Title, Description, Image, BgImage, Name}) => {
     const style = {
         background: `url(${require(`../../assets/img/PNG/${BgImage}`)}) no-repeat 50% 50%`,
     }
 
-    return <div className="main-screen">
+    return <div className={`main-screen ${Name}`}>
         <div className="bg" style = {style}></div>
         <div className="center">
             <Container style = {{maxWidth: "100%"}}>

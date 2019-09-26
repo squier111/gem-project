@@ -46,12 +46,14 @@ export default class Titles {
         },
         {
             id: 2,
+            Image: "phone2.png",
             SubTitle: "Product Overview",
             Title: "Gem Onramp lets users buy/transfer crypto with any payment method or exchange, with a few lines of code.",
             Description:"Too much friction in onboarding new users to crypto apps (different payment methods, global payment solutions, access to existing exchange accounts). Crypto industry is fragmented (lots of exchanges/jurisdictions) making it expensive to build and maintain all the connections required to maintain a comprehensive solution. "
         },
         {
             id: 3,
+            Image: "phone-overview.png",
             SubTitle: "Product Overview",
             Title: "Gem connects users’ exchanges accounts to your app to deliver a comprehensive, uniform stream of transaction data.",
             Description:"Building a universal history of users’ crypto transactions is complicated and difficult to maintain across dozens of cryptocurrency exchanges."
