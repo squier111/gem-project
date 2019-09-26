@@ -1,4 +1,4 @@
-export default class Companys {
+export default class CompanysMocks {
     companys = [
       {
         id: 1,

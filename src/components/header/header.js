@@ -43,15 +43,15 @@ class Header extends Component {
                             </DropdownToggle>
                             <DropdownMenu right>
                             <DropdownItem>
-                                <NavLink exact={true} to='/products' className="link">Onramp</NavLink>
+                                <NavLink exact={true} to='/onramp' className="link">Onramp</NavLink>
                             </DropdownItem>
                             <DropdownItem divider />
                             <DropdownItem>
-                                <NavLink exact={true} to='/products' className="link">Connect</NavLink>
+                                <NavLink exact={true} to='/connect' className="link">Connect</NavLink>
                             </DropdownItem>
                             <DropdownItem divider />
                             <DropdownItem>
-                                <NavLink exact={true} to='/products' className="link">API</NavLink>
+                                <NavLink exact={true} to='/api' className="link">API</NavLink>
                             </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>

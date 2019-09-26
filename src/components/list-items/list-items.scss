@@ -1,0 +1,17 @@
+.list-items {
+    min-height: 600px;
+    .items {
+        padding: 27px 0 0 0;
+        margin: 0 -30px;
+    }
+    .visual {
+        min-height: 90px;
+        line-height: 90px;
+        margin: 0 0 9px;
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+}

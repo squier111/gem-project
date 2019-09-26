@@ -15,7 +15,7 @@ const descriptions = ProductOverviews.description.map((item)=>{
         <div key={item.id} className={`item${item.id}`}>
             <h3>{item.Title}</h3>
             <p>{item.Text}</p>
-            <a href="#" className="read-more">Read More →</a>
+            <span className="read-more">Read More →</span>
         </div>
     )
 })

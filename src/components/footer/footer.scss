@@ -1,0 +1,112 @@
+.footer {
+    padding: 149px 0 0 0;
+    position: relative;
+    .footer-holder {
+        padding: 94px 0 0;
+        position: relative;
+        background: #202125;
+    }
+    .footer-element {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        background-size: 100% !important;
+        height: 150px;
+    }
+    .footer-top {
+        margin-bottom: 172px;
+        .footer-title {
+            font: 59px/60px 'Faktum Test Bold', sans-serif;
+            color: #fff;
+            display: inline-block;
+            margin: 0;
+            letter-spacing: -0.01em;
+        }
+        .footer-btn-holder {
+            display: inline-block;
+            button {
+                min-height: 60px;
+                background: none;
+                font: 14px/14px 'Faktum Test Bold', sans-serif;
+                border:none;
+                background: #FCA703;
+                border-radius: 5px;
+                letter-spacing: 0.11em;
+                min-width: 185px;
+                margin: 0 0 0 20px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #202124;
+                &.pricing-btn {
+                    color: #fff;
+                    min-width: 218px;
+                    background: none;
+                    border: 2px #fff solid;
+                }
+            }
+
+        }
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .footer-bot {
+        padding: 0 0 171px;
+        justify-content: space-between;
+        margin: 0 -30px;
+    }
+    .subtitle {
+        font-size: 11px;
+        color: #01BBD5;
+        margin: 0 0 12px;
+        line-height: 17px;
+    }
+    .footer-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            font-size: 16px;
+            line-height: 20px;
+            margin:  0 0 11px;
+            a {
+                color: #F4F6F8;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .copyright {
+        border-top: 1px #979DA2 solid;
+        padding: 12px 0;
+        justify-content: space-between;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: #979DA2;
+        font-size: 10px;
+        line-height: 12px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0.13em;
+                padding: 0 11px;
+                border-right: 1px #979DA2 solid;
+                &:last-child {
+                    border-right: none;
+                    padding-right: 0;
+                }
+                a {
+                    color: #979DA2; 
+                }
+            }
+        }
+    }
+}

@@ -5,8 +5,11 @@ import Header from '../header';
 import {
   SecurityPage,
   PricingPage,
-  ProductPage,
-  HomePage} from '../pages';
+  ApiPage,
+  OnrampPage,
+  ConnectPage,
+  HomePage
+} from '../../pages';
 import {Route, Switch} from 'react-router-dom';
 
 class App extends Component {
@@ -22,10 +25,20 @@ class App extends Component {
                 exact
                 />
               <Route
-                path='/products'
-                component ={ProductPage}
+                path='/api'
+                component ={ApiPage}
                 exact
                 />
+              <Route
+                path='/onramp'
+                component ={OnrampPage}
+                exact
+                />
+              <Route
+                path='/connect'
+                component ={ConnectPage}
+                exact
+                />  
               <Route
                 path='/security'
                 component ={SecurityPage}
