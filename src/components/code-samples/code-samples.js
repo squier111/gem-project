@@ -1,17 +1,11 @@
 import React, {Component} from 'react';
-import  './for-developers.scss';
+import  './code-samples.scss';
 import { Container, Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
-import {Titles, CodeMocks} from '../../mocks';
 import HeadSections from '../head-sections';
-import ButtonsHolder from '../buttons-holder';
 import CodeExample from '../code-example';
 
-
-const Title = new Titles();
-const Code = new CodeMocks();
-
-class ForDevelopers extends Component {
+class CodeSamples  extends Component {
     constructor(props) {
         super(props);
     
@@ -29,16 +23,43 @@ class ForDevelopers extends Component {
         }
       }
 
-    
-      render() {
+      list = this.props.codelist.map((item)=>{
         return (
-            <div className="for-developers" 
-            style = {{
-                background: `url(${require(`../../assets/img/PNG/bg-for-developers.png`)}) no-repeat 0% 50%`,
-            }}>
+            <div key={item.id} className="item">
+                <div className="head">
+                    <h3>{item.Title}</h3>
+                    <div className="info-box">
+                        <span className={`type ${classnames({ get: item.Type=== 'Get' })}`}>{item.Type}</span>
+                        <span>{`/${item.Info}`}</span>
+                    </div>
+                </div>
+                <p>{item.Text}</p>
+            </div>
+        )
+    })
+
+    
+    render() {
+        return (
+            <div className="code-samples" 
+                style = {{
+                    background: `url(${require(`../../assets/img/PNG/bg-code-samples.png`)}) no-repeat 100% 50%`,
+                }}>
                 <div className="center">
                     <Container style = {{maxWidth: "100%"}}>
                         <Row>
+                            <Col xs="12" sm="12" md='12'>
+                                <HeadSections 
+                                    subtitle= {this.props.subtitle} 
+                                    title = {this.props.title}/>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs="12" sm="6" md="6">
+                                <div className="description-list">
+                                    {this.list}
+                                </div>
+                            </Col>
                             <Col xs="12" sm="6" md="6">
                                 <Nav tabs>
                                     <NavItem>
@@ -46,7 +67,7 @@ class ForDevelopers extends Component {
                                         className={classnames({ active: this.state.activeTab === '1' })}
                                         onClick={() => { this.toggle('1'); }}
                                         >
-                                        Onramp
+                                        Request
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
@@ -54,38 +75,18 @@ class ForDevelopers extends Component {
                                         className={classnames({ active: this.state.activeTab === '2' })}
                                         onClick={() => { this.toggle('2'); }}
                                         >
-                                        Connect
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink
-                                        className={classnames({ active: this.state.activeTab === '3' })}
-                                        onClick={() => { this.toggle('3'); }}
-                                        >
-                                        API
+                                        Response
                                         </NavLink>
                                     </NavItem>
                                 </Nav>
                                 <TabContent activeTab={this.state.activeTab}>
                                     <TabPane tabId="1">
-                                        <CodeExample code={Code.code[0]}/>
+                                        <CodeExample code={this.props.codes}/>
                                     </TabPane>
                                     <TabPane tabId="2">
-                                       <CodeExample code= {Code.code[1]}/>
-                                    </TabPane>
-                                    <TabPane tabId="3">
-                                        <CodeExample code={Code.code[0]}/>
+                                       <CodeExample code={this.props.codes}/>
                                     </TabPane>
                                 </TabContent>
-                            </Col>
-                            <Col xs="12" sm="6" md={{ size: 5, offset: 1 }}>
-                                <div className="info" >
-                                    <HeadSections 
-                                        subtitle= {Title.BlockTitles[10].SubTitle} 
-                                        title = {Title.BlockTitles[10].Title}
-                                        description = {Title.BlockTitles[10].Description}/>
-                                    <ButtonsHolder/>
-                                </div>
                             </Col>
                         </Row>
                     </Container>
@@ -95,4 +96,4 @@ class ForDevelopers extends Component {
     }
 }
 
-export default ForDevelopers;
+export default CodeSamples;

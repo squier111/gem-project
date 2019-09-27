@@ -2,11 +2,16 @@ import React from 'react';
 import Mainscreen from '../components/main-screen';
 import ProductOverview from '../components/product-overview';
 import Footer from '../components/footer';
-import {MainScreenMocks, Titles, CodeMocks} from '../mocks';
+import {MainScreenMocks, Titles, CodeMocks, CodeSamplesList} from '../mocks';
+import CodeSamples from '../components/code-samples';
 
 const mainScreenDatas = new MainScreenMocks();
 const title = new Titles();
 const Code = new CodeMocks();
+const CodeList = new CodeSamplesList();
+
+
+const list = CodeList.list.slice(0, 4);
 
 
 const OnrampPage = () => {
@@ -26,6 +31,12 @@ const OnrampPage = () => {
             titles = {title.BlockTitles[1].Title}
             codes={Code.code[0]}
             image={title.BlockTitles[1].Image}
+          />
+          <CodeSamples
+             subtitle= {title.BlockTitles[5].SubTitle} 
+             title = {title.BlockTitles[5].Title}
+             codelist = {list}
+             codes={Code.code[1]}
           />
           <Footer/>
       </div>

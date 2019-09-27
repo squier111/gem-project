@@ -1,0 +1,100 @@
+@import '../../style-resources/mixins.scss';
+
+.code-samples {
+    min-height: 1050px;
+    .description-list {
+        .item {
+            cursor: pointer;
+            position: relative;
+            @include transition;
+            &:hover {
+                background: #fff;
+                -webkit-box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.1);
+                h3 {
+                    color: #E71F64; 
+                }
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+            .head {
+                margin: 0 32px 6px 0;
+            }
+            .info-box {
+                font-family: 'PT Mono', monospace;
+                color: #00ACC3;
+                .type {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 0 9px 0 0;
+                    color: #E71F64;
+                    text-transform: uppercase;
+                    &.get {
+                        color: #6BBF10;
+                    }
+                }
+            }
+            h3 {
+                @include transition;
+                text-transform: uppercase;
+                margin: 0;
+                letter-spacing: 0.04em;
+            }
+            p {
+                font-size: 14px;
+                line-height: 16px;
+                color: #50565A;
+                margin: 0;
+            }
+            padding: 18px 29px 19px 20px;
+            margin: 0 18px 4px 0;
+            &:before {
+                content: '';
+                opacity: 0;
+                @include transition;
+                transition: all 0.3s linear;
+                position: absolute;
+                top: 50%;
+                margin: -10px 0 0 0;
+                right: -10px;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 10px solid #fff;
+                border-bottom: 10px solid transparent;
+            }
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .nav-tabs {
+        margin: 0 0 0 15px;
+    }
+    .tab-content {
+        margin: -7px 0px 0 15px;
+    }
+    padding: 122px 0 0 0;
+    .head-sections {
+        margin: 0 0 37px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .subtitle {
+        padding: 14px 0 0 0;
+        margin: 0 0 23px;
+    }
+    .row > div  {
+        padding: 0;
+    }
+    .info {
+        margin: 0 0 0 -12px;
+    }
+    pre[class*="language-"] {
+        min-height: 500px;
+    }
+}
