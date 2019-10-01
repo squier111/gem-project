@@ -1,0 +1,18 @@
+.responsiveness {
+    padding: 0 0 120px 0;
+    .head-sections {
+        text-align: center;
+        margin: 0 0 96px;
+        p {
+            max-width: 590px;
+            margin: 0 auto;
+        }
+    }
+    .visual {
+        text-align: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

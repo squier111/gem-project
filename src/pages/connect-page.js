@@ -1,6 +1,7 @@
 import React from 'react';
 import Mainscreen from '../components/main-screen';
 import ProductOverview from '../components/product-overview';
+import Responsiveness from '../components/responsiveness';
 import Footer from '../components/footer';
 import {MainScreenMocks, Titles, CodeMocks, CodeSamplesList} from '../mocks';
 import CodeSamples from '../components/code-samples';
@@ -38,7 +39,13 @@ const ConnectPage = () => {
              codelist = {list}
              codes={Code.code[1]}
           />
-           <Footer/>
+          <Responsiveness
+            subtitle= {title.BlockTitles[11].SubTitle} 
+            title = {title.BlockTitles[11].Title}
+            descriptions = {title.BlockTitles[11].Description}
+            image = {title.BlockTitles[11].Image}
+          />
+          <Footer/>
       </div>
   )
 }

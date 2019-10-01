@@ -1,4 +1,30 @@
 @import '../../style-resources/mixins.scss';
+.pricing-page {
+    .main-screen {
+        &.page {
+            min-height: auto;
+        }
+        .row > div {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .holder {
+            padding: 0;
+            text-align: center;
+        }
+        .btn-holder {
+            display: none;
+        }
+    }
+}
+.security-page {
+    .main-screen {
+        min-height: 894px;
+        .visual {
+            margin: -27px 0 0 30px;
+        }
+    }
+}
 .main-screen {
     position: relative;
     min-height: 1034px;

@@ -2,13 +2,12 @@ import React from 'react';
 import  './product-overview-main.scss';
 import { Container, Row, Col } from 'reactstrap';
 import {PHONEOWERVIEW} from '../../assets/Icons';
-import {ProductOverview, Titles} from '../../mocks';
+import {ProductOverview} from '../../mocks';
 import HeadSections from '../head-sections';
 
 const ProductOverviews = new ProductOverview();
-const title = new Titles();
 
-const ProductOverviewMain = () => {
+const ProductOverviewMain = ({subtitle, title, description}) => {
 
 const descriptions = ProductOverviews.description.map((item)=>{
     return (
@@ -26,11 +25,11 @@ const descriptions = ProductOverviews.description.map((item)=>{
                 <Row className="head">
                     <Col xs="12" sm="6" md="5">
                         <HeadSections 
-                            subtitle= {title.BlockTitles[0].SubTitle} 
-                            title = {title.BlockTitles[0].Title}/>
+                            subtitle= {subtitle} 
+                            title = {title}/>
                     </Col>
                     <Col xs="12" sm="6" md={{ size: 6,  offset: 1 }}>
-                        <p>{title.BlockTitles[0].Description}</p>
+                        <p>{description}</p>
                     </Col>
                 </Row>
                 <Row>

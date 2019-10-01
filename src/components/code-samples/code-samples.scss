@@ -1,5 +1,15 @@
 @import '../../style-resources/mixins.scss';
-
+.api-page .code-samples {
+    background: none!important;
+    min-height: auto;
+    padding: 122px 0 127px 0;
+    .head-sections {
+        margin: 0 0 -14px;
+    }
+    .description-list {
+        padding: 45px 0 0 0;
+    }
+}
 .code-samples {
     min-height: 1050px;
     .description-list {
@@ -95,6 +105,6 @@
         margin: 0 0 0 -12px;
     }
     pre[class*="language-"] {
-        min-height: 500px;
+        min-height: 544px;
     }
 }

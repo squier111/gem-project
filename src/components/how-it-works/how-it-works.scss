@@ -1,0 +1,115 @@
+
+.how-it-works {
+    padding: 0 0 152px;
+    .graph {
+        padding: 51px 0 74px;
+        align-items: flex-end;
+        margin: 0 -75px;
+        justify-content: center;
+        div {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 63px;
+                top: 40px;
+                z-index: 2;
+                left: 85%;
+                height: 20px;
+                background: url(../../assets/img/SVG/icons-data.svg) 50% 50% no-repeat;
+            }
+            &:last-child {
+                &:after  {
+                    display: none;
+                }
+            }
+            text-align: center;
+            background: #f5f6f8;
+            &:last-child {
+                .visual {
+                    &:before  {
+                        display: none;
+                    }
+                    &:after  {
+                        display: none;
+                    }
+                }
+            }
+            .visual {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 200%;
+                    top: 49px;
+                    left: 100%;
+                    height: 2px;
+                    background: #DCE0E3;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 63px;
+                    top: 40px;
+                    left: 160%;
+                    height: 20px;
+                    background: url(../../assets/img/SVG/icons-data.svg) 50% 50% no-repeat;
+                }
+                display: inline-block;
+                z-index: 20;
+                background: #f5f6f8;
+                z-index: 2;
+                padding: 0 25px;
+                position: relative;
+                text-align: center;
+            }
+        }
+    }
+    .circle {
+        div {
+            text-align: center;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 2px;
+                bottom: 100%;
+                left: 51%;
+                height: 100%;
+                background: #DCE0E3;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 27px;
+                bottom: 100%;
+                z-index: 2;
+                padding: 0 0 0 0;
+                left: 48%;
+                height: 88px;
+                background: url(../../assets/img/SVG/icon-symbols.svg) 50% 50% no-repeat;
+            }
+        }
+    }
+    .head-sections {
+        text-align: center;
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    .items {
+        padding: 27px 0 0 0;
+        margin: 0 -30px;
+        .item {
+            margin: 0 0 40px;
+        }
+    }
+    .visual {
+        min-height: 90px;
+        line-height: 90px;
+        margin: 0 0 9px;
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+}

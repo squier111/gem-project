@@ -6,6 +6,7 @@ import FooterListMocks from './footer-list-mocks';
 import MainScreenMocks from './main-screen-mocks';
 import CodeMocks from './code-mocks';
 import CodeSamplesList from './code-samples-list';
+import AdvantagesList from './advantages-list';
 
 export {
     ProductOverview,
@@ -15,5 +16,6 @@ export {
     FooterListMocks,
     MainScreenMocks,
     CodeMocks,
-    CodeSamplesList
+    CodeSamplesList,
+    AdvantagesList
 }

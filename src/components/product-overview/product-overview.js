@@ -31,7 +31,7 @@ const ProductOverview = ({subtitles, descriptions, titles, codes, image}) => {
                     </Col>
                     <Col xs="12" sm="5" md="4">
                         <div className="visual">
-                        <img src={`${require(`../../assets/img/PNG/${image}`)}`} alt='img'/>
+                            <img src={`${require(`../../assets/img/PNG/${image}`)}`} alt='img'/>
                         </div>
                     </Col>
                 </Row>

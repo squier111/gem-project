@@ -1,6 +1,7 @@
 import React from 'react';
 import Mainscreen from '../components/main-screen';
 import ProductOverview from '../components/product-overview';
+import Responsiveness from '../components/responsiveness';
 import Footer from '../components/footer';
 import {MainScreenMocks, Titles, CodeMocks, CodeSamplesList} from '../mocks';
 import CodeSamples from '../components/code-samples';
@@ -33,10 +34,16 @@ const OnrampPage = () => {
             image={title.BlockTitles[1].Image}
           />
           <CodeSamples
-             subtitle= {title.BlockTitles[5].SubTitle} 
-             title = {title.BlockTitles[5].Title}
-             codelist = {list}
-             codes={Code.code[1]}
+            subtitle= {title.BlockTitles[5].SubTitle} 
+            title = {title.BlockTitles[5].Title}
+            codelist = {list}
+            codes={Code.code[1]}
+          />
+          <Responsiveness
+            subtitle= {title.BlockTitles[6].SubTitle} 
+            title = {title.BlockTitles[6].Title}
+            descriptions = {title.BlockTitles[6].Description}
+            image = {title.BlockTitles[6].Image}
           />
           <Footer/>
       </div>

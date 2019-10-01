@@ -26,6 +26,16 @@
             line-height: 15px;
             letter-spacing: 0.08em;
             text-transform: uppercase;
+            .link {
+                @include transition;
+                text-decoration: none;
+                &.active {
+                    color: #00BBD7;
+                }
+                &:hover {
+                    color: #00BBD7;
+                }
+            }
         }
         .nav-link {
             padding: 0;

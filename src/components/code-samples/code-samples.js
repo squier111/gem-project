@@ -13,17 +13,17 @@ class CodeSamples  extends Component {
         this.state = {
           activeTab: '1'
         };
-      }
+    }
     
-      toggle(tab) {
+    toggle(tab) {
         if (this.state.activeTab !== tab) {
           this.setState({
             activeTab: tab
           });
         }
-      }
+    }
 
-      list = this.props.codelist.map((item)=>{
+    list = this.props.codelist.map((item)=>{
         return (
             <div key={item.id} className="item">
                 <div className="head">

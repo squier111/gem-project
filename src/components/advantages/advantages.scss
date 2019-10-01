@@ -1,0 +1,57 @@
+@import '../../style-resources/mixins.scss';
+
+.advantages {
+    padding: 0 0 95px;
+    .head-sections {
+        text-align: center;
+        margin: 0 0 70px;
+        h2 {
+            margin: 0 auto;
+            max-width: 776px;
+        }
+    }
+    .advantages-holder {
+        @include transition;
+        height: 100%;
+        transition: all 0.3s linear;
+        width: 490px;
+        box-sizing: border-box;
+        padding: 47px 30px 43px 30px;
+        &:hover {
+            background: #fff;
+            box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .advantages-title {
+        display: block;
+        margin: 0 0 27px;
+        text-align: center;
+        font: 24px/26px 'Faktum Test Bold', sans-serif;
+        color: #202124;
+    }
+    .advantages-block {
+        justify-content: center;
+        & > div:first-child {
+            .advantages-holder {
+                float: right;
+            }
+        }
+    }
+    .advantages-list {
+        margin: 0;
+        padding: 0 0 0 67px;
+        list-style: none;
+        li {
+            font-size: 16px;
+            line-height: 18px;
+            color: #202124;
+            margin: 0 0 23px;
+            i {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 10px 0 0;
+            }
+        }
+
+    }
+}

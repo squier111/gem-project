@@ -40,6 +40,14 @@ export default class MainScreenMocks {
         Image: "security.png",
         BgImage: "bg-main.png"
       },
+      {
+        id: 5,
+        Subtitle: "",
+        Title: "Here’s a pricing headline.",
+        Description: "Here’s a pricing headline.",
+        Image: "no-image.png",
+        BgImage: "bg-main.png"
+      },
     ];
   
   }
