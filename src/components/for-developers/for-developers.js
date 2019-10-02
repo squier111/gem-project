@@ -31,15 +31,16 @@ class ForDevelopers extends Component {
 
     
       render() {
+        const style = {
+            background: `url(${require(`../../assets/img/PNG/bg-for-developers.png`)}) no-repeat 0% 50%`
+        }
         return (
-            <div className="for-developers" 
-            style = {{
-                background: `url(${require(`../../assets/img/PNG/bg-for-developers.png`)}) no-repeat 0% 50%`,
-            }}>
+            <div className="for-developers">
+                <div className="bg" style = {style}></div>
                 <div className="center">
                     <Container style = {{maxWidth: "100%"}}>
                         <Row>
-                            <Col xs="12" sm="6" md="6">
+                            <Col xs="12" sm="12" md="6">
                                 <Nav tabs>
                                     <NavItem>
                                         <NavLink
@@ -78,7 +79,7 @@ class ForDevelopers extends Component {
                                     </TabPane>
                                 </TabContent>
                             </Col>
-                            <Col xs="12" sm="6" md={{ size: 5, offset: 1 }}>
+                            <Col xs="12" sm="12" md={{ size: 5, offset: 1 }}>
                                 <div className="info" >
                                     <HeadSections 
                                         subtitle= {Title.BlockTitles[10].SubTitle} 

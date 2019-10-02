@@ -10,7 +10,7 @@ const Title = new Titles();
 const ListItems = ({ListItem, subtitle, title, description}) => {
     const security = ListItem.map((item)=>{
         return (
-            <Col xs="12" sm="4" md="4" key={item.id}>
+            <Col xs="12" sm="12" md="4" key={item.id}>
                 <div className="item">
                     <div className="visual">
                         <img src={require(`../../assets/img/SVG/${item.image}.svg`)} alt = "img"/>

@@ -7,6 +7,7 @@ import MainScreenMocks from './main-screen-mocks';
 import CodeMocks from './code-mocks';
 import CodeSamplesList from './code-samples-list';
 import AdvantagesList from './advantages-list';
+import TableMocks from './table';
 
 export {
     ProductOverview,
@@ -17,5 +18,6 @@ export {
     MainScreenMocks,
     CodeMocks,
     CodeSamplesList,
-    AdvantagesList
+    AdvantagesList,
+    TableMocks
 }

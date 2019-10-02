@@ -1,6 +1,7 @@
 @import '../../style-resources/mixins.scss';
 .pricing-page {
     .main-screen {
+        padding: 198px 0 0 0;
         &.page {
             min-height: auto;
         }
@@ -14,6 +15,9 @@
         }
         .btn-holder {
             display: none;
+        }
+        .visual {
+            margin: 0;
         }
     }
 }
@@ -76,5 +80,46 @@
     }
     .row > div {
         padding: 0;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .main-screen  {
+        &.page {
+            min-height: auto;
+            .visual {
+                margin: 0;
+            }
+        }
+        .visual {
+            margin: 0;
+        }
+        min-height: auto;
+        padding: 100px 0 90px 0;
+        .holder {
+            padding: 0;
+            margin: 0 0 32px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 21px;
+            color: #797E82;
+            padding: 0;
+            margin: 0 0 5px;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .main-screen  {
+        .bg {
+            top: 13%;
+            left: 16%;
+            background-size: cover!important;
+            height: 630px;
+            width: 630px;
+            position: absolute;
+        }
+       
     }
 }

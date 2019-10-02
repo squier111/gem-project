@@ -10,7 +10,7 @@ const Title = new Titles();
 const Companys = () => {
     const trusted = companys.companys.slice(0, 8).map((item)=>{
         return (
-            <Col xs="4" sm="4" md="auto" key={item.id}>
+            <Col xs="4" sm="4" md="4" lg="auto" key={item.id}>
                 <div className="visual">
                     <img src={require(`../../assets/img/SVG/${item.image}.svg`)} alt = "img"/>
                 </div>
@@ -20,7 +20,7 @@ const Companys = () => {
 
     const featured = companys.companys.slice(8).map((item)=>{
         return (
-            <Col xs="4" sm="4" md="2" key={item.id}>
+            <Col xs="4" sm="4" md="4" lg="2" key={item.id}>
                 <div className="visual">
                     <img src={require(`../../assets/img/SVG/${item.image}.svg`)} alt = "img"/>
                 </div>

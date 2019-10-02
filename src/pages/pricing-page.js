@@ -1,9 +1,11 @@
 import React from 'react';
 import Footer from '../components/footer';
 import Mainscreen from '../components/main-screen';
-import {MainScreenMocks} from '../mocks';
+import {MainScreenMocks, TableMocks} from '../mocks';
+import Table from '../components/table';
 
 const mainScreenDatas = new MainScreenMocks();
+const table = new TableMocks();
 
 const PricingPage = () => {
   return (
@@ -15,6 +17,9 @@ const PricingPage = () => {
             Image = {mainScreenDatas.Datas[5].Image}
             BgImage ={mainScreenDatas.Datas[5].BgImage}
             Name = {'page'}
+        />
+        <Table
+            data = {table}
         />
         <Footer/>
     </div>

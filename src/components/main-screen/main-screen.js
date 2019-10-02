@@ -13,7 +13,7 @@ const MainScreen = ({Subtitle, Title, Description, Image, BgImage, Name}) => {
         <div className="center">
             <Container style = {{maxWidth: "100%"}}>
                 <Row>
-                    <Col xs="6" sm="6" md="6">
+                    <Col xs="12" sm="12" md="6">
                         <div className="holder">
                             <span className="subtitle">{Subtitle}</span>
                             <h1>{Title}</h1>
@@ -21,7 +21,7 @@ const MainScreen = ({Subtitle, Title, Description, Image, BgImage, Name}) => {
                             <ButtonsHolder/>
                         </div>
                     </Col>
-                    <Col xs="6" sm="6" md="6">
+                    <Col xs="12" sm="12" md="6">
                         <div className="visual">
                             <img src={`${require(`../../assets/img/PNG/${Image}`)}`} alt='img'/>
                         </div>

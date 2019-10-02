@@ -5,3 +5,10 @@
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
+@mixin transition-right {
+    -webkit-transition: right 0.3s linear;
+    -moz-transition: right 0.3s linear;
+    -ms-transition: right 0.3s linear;
+    -o-transition: right 0.3s linear;
+    transition: right 0.3s linear;
+}

@@ -10,7 +10,7 @@ const footerList = new FooterListMocks();
 const Footer = () => {
     const list = footerList.footerList.map((item)=>{
         return (
-            <Col xs="12" sm="3" md="auto" key={item.id}>
+            <Col xs="6" sm="6" md="auto" key={item.id}>
                 <span className="subtitle">{item.title}</span>
                 <ul className="footer-list">
                     {
@@ -42,7 +42,7 @@ const Footer = () => {
                             </div>
                         </Row>
                         <Row className="footer-bot">
-                            <Col xs="12" sm="3" md="3">
+                            <Col xs="12" sm="12" md="3">
                                 <img src={LOGOFOOT} alt='logo' className='logo-foot'/>
                             </Col>
                             {list}

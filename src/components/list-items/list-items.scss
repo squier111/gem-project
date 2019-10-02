@@ -30,3 +30,23 @@
     }
 
 }
+
+@media all and (max-width: 767px) {
+    .list-items{
+        position: relative;
+        border-top: 1px #DCE0E3 solid;
+        padding: 92px 0 80px 0;
+        .items {
+            .item {
+                margin: 0 0 3px;
+            }
+            .visual {
+                margin: 0;
+            }
+            padding: 6px 0 0 0;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

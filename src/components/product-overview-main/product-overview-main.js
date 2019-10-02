@@ -23,22 +23,22 @@ const descriptions = ProductOverviews.description.map((item)=>{
         <div className="center">
             <Container style = {{maxWidth: "100%"}}>
                 <Row className="head">
-                    <Col xs="12" sm="6" md="5">
+                    <Col xs="12" sm="12" md="5">
                         <HeadSections 
                             subtitle= {subtitle} 
                             title = {title}/>
                     </Col>
-                    <Col xs="12" sm="6" md={{ size: 6,  offset: 1 }}>
+                    <Col xs="12" sm="12" md={{ size: 6,  offset: 1 }}>
                         <p>{description}</p>
                     </Col>
                 </Row>
-                <Row>
-                    <Col xs="12" sm="6" md="5">
+                <Row className="content">
+                    <Col xs="12" sm="12" md="5">
                         <div className="description-list">
                             {descriptions}
                         </div>
                     </Col>
-                    <Col xs="12" sm="6" md={{ size: 6, offset: 1 }}>
+                    <Col xs="12" sm="12" md={{ size: 6, offset: 1 }}>
                         <div className="visual">
                             <img src={PHONEOWERVIEW} alt='img'/>
                         </div>

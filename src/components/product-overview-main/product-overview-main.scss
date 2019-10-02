@@ -1,6 +1,10 @@
 @import '../../style-resources/mixins.scss';
 
 .product-overview-main {
+    img {
+        max-width: 100%;
+        height: auto
+    }
     .container {
         padding: 0 90px;
     }
@@ -84,6 +88,70 @@
             line-height: 19px;
             color: #50565A;
             margin: 0 24px 3px 0;
+        }
+    }
+}
+@media all and (max-width: 991px) {
+    .product-overview-main {
+        .container {
+            padding: 0;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .product-overview-main {
+        padding: 0 0 72px;
+        .head {
+            margin: 0 0 20px;
+            p {
+                margin: 0;
+            }
+        }
+        .description-list {
+            padding: 16px 0 0 0;
+            p {
+                margin: 0 0 3px;
+            }
+            div:hover:before {
+                display: none;
+            }
+            div:hover{
+                background: transparent;
+                box-shadow: none;
+            }
+            &>div {
+                padding: 0;
+                margin: 0 0 23px;
+            }
+            .read-more {
+                opacity: 1;
+                z-index: 0;
+            }
+        }
+        .content {
+            &>div {
+                .visual {
+                    max-width: 189px;
+                    margin: 0 auto;
+                }
+                -webkit-order: 1;
+                -ms-flex-order: 1;
+                order: 1;
+                &:first-child {
+                    -webkit-order: 2;
+                    -ms-flex-order: 2;
+                    order: 2;
+                } 
+            }
+        }
+        .subtitle {
+            left: 0;
+        }
+        .head {
+            div {
+                padding: 0;
+            }
         }
     }
 }
