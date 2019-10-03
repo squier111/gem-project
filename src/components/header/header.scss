@@ -38,7 +38,7 @@
         }
     }
     position: absolute;
-    z-index: 20;
+    z-index: 200;
     width: 100%;
     .navbar-expand-md .navbar-nav .nav-link {
         padding: 0;
@@ -221,7 +221,7 @@
             width: 320px;
             position: fixed;
             top: 0;
-            z-index: 2;
+            z-index: 20;
             bottom: 0;
             right: -320px;
             .holder{
@@ -247,6 +247,9 @@
                 text-transform: none;
                 margin: 0 0 11px;
                 letter-spacing: -0.03em;
+                &:first-child {
+                    margin: 0 0 11px; 
+                }
             }
         }
         .dropdown-menu {

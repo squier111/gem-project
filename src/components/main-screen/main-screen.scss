@@ -1,10 +1,18 @@
 @import '../../style-resources/mixins.scss';
+.onramp-page,
+.connect-page,
+.api-page {
+    .main-screen {
+        min-height: 945px;
+        .visual {
+            margin: -41px -158px 0 26px;
+        }
+    }
+}
 .pricing-page {
     .main-screen {
         padding: 198px 0 0 0;
-        &.page {
-            min-height: auto;
-        }
+        min-height: auto;
         .row > div {
             flex: 0 0 100%;
             max-width: 100%;
@@ -84,13 +92,33 @@
 }
 
 @media all and (max-width: 767px) {
-    .main-screen  {
-        &.page {
+    .security-page {
+        .main-screen {
             min-height: auto;
+            padding: 125px 0 27px 0;
             .visual {
                 margin: 0;
+                text-align: center;
             }
         }
+    }
+    .onramp-page,
+    .connect-page,
+    .api-page {
+        .main-screen {
+            min-height: auto;
+            padding: 125px 0 27px 0;
+            .subtitle {
+                top: -23px;
+                font-size: 17px;
+            }
+            .visual {
+                margin: 9px -52px 0 27px;
+                text-align: center;
+            }
+        }
+    }
+    .main-screen  {
         .visual {
             margin: 0;
         }
@@ -111,6 +139,23 @@
 }
 
 @media all and (max-width: 500px) {
+    .onramp-page,
+    .connect-page,
+    .api-page,
+    .security-page,
+    .pricing-page  {
+        .main-screen {
+           .bg {
+                top: inherit;
+                left: 57%;
+                background-size: cover !important;
+                height: 400px;
+                width: 400px;
+                position: absolute;
+                bottom: 10px;
+            }
+        }
+    }
     .main-screen  {
         .bg {
             top: 13%;

@@ -83,8 +83,9 @@
                 width: 27px;
                 bottom: 100%;
                 z-index: 2;
-                padding: 0 0 0 0;
-                left: 48%;
+                padding: 0;
+                margin: 0 0 0 -20px;
+                left: 50%;
                 height: 88px;
                 background: url(../../assets/img/SVG/icon-symbols.svg) 50% 50% no-repeat;
             }
@@ -112,4 +113,77 @@
         }
     }
 
+}
+@media all and (max-width: 1200px) {
+    .how-it-works {
+        .graph {
+            div {
+                .visual {
+                    &:before {
+                        width: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    .how-it-works {
+        padding: 80px 0;
+        border-top: 1px #DCE0E3 solid;
+        .head-sections {
+            text-align: left;
+        }
+    }
+}
+@media all and (max-width: 575px) {
+    .how-it-works {
+        .graph {
+            padding-bottom: 103px;
+            div {
+            &:after {
+                content: '';
+                left: 50%;
+                transform: rotate(90deg);
+                bottom: 44px;
+                z-index: 20;
+                top: inherit;
+                margin: 0 0 0 -31px;
+                -moz-transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }   
+            &:first-child{
+                .visual {
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+            &:last-child {
+                .visual {
+                    margin: 0;
+                    &:before {
+                        display: block;
+                    }
+                }
+            }
+            .visual  {
+                  margin: 0 0 103px;
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    bottom: 100%;
+                    top: inherit;
+                    left: 50%;
+                    height: 100%;
+                    background: #DCE0E3;
+                }
+              }
+            }  
+        }
+    }
 }

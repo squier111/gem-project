@@ -22,7 +22,6 @@ const HomePage = () => {
           Description = {mainScreenDatas.Datas[0].Description}
           Image = {mainScreenDatas.Datas[0].Image}
           BgImage ={mainScreenDatas.Datas[0].BgImage}
-          Name = {''} 
         />
         <ProductOverviewMain
           subtitle= {title.BlockTitles[0].SubTitle} 

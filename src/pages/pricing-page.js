@@ -16,7 +16,6 @@ const PricingPage = () => {
             Description = {mainScreenDatas.Datas[5].Description}
             Image = {mainScreenDatas.Datas[5].Image}
             BgImage ={mainScreenDatas.Datas[5].BgImage}
-            Name = {'page'}
         />
         <Table
             data = {table}

@@ -24,7 +24,6 @@ const OnrampPage = () => {
             Description = {mainScreenDatas.Datas[1].Description}
             Image = {mainScreenDatas.Datas[1].Image}
             BgImage ={mainScreenDatas.Datas[1].BgImage}
-            Name = {'page'}
           />
           <ProductOverview
             subtitles= {title.BlockTitles[1].SubTitle} 

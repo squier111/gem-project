@@ -16,3 +16,13 @@
         }
     }
 }
+
+@media all and (max-width: 767px) {
+    .responsiveness {
+        border-top: 1px #DCE0E3 solid;
+        padding: 80px 0 10px 0;
+        .head-sections {
+            text-align: left;
+        }
+    }
+}

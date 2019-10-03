@@ -8,7 +8,7 @@ const MainScreen = ({Subtitle, Title, Description, Image, BgImage, Name}) => {
         background: `url(${require(`../../assets/img/PNG/${BgImage}`)}) no-repeat 50% 50%`,
     }
 
-    return <div className={`main-screen ${Name}`}>
+    return <div className="main-screen">
         <div className="bg" style = {style}></div>
         <div className="center">
             <Container style = {{maxWidth: "100%"}}>

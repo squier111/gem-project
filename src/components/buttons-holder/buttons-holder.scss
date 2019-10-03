@@ -1,6 +1,41 @@
 @import '../../style-resources/mixins.scss';
+.onramp-page {
+    .btn-holder {
+        button {
+            color: #DA1260;
+            border-bottom: 1px solid #DA1260;
+            &.api-key-btn {
+                @include gradient-onramp;
+            }
+        }
+    }
+}
+.connect-page {
+    .btn-holder {
+        button {
+            color: #848C12;
+            border-bottom: 1px solid #848C12;
+            &.api-key-btn {
+                color: #202124;
+                @include gradient-connect;
+            }
+        }
+    }
+}
+.api-page {
+    .btn-holder {
+        button {
+            color: #E7382D;
+            border-bottom: 1px solid #E7382D;
+            &.api-key-btn {
+                @include gradient-api;
+            }
+        }
+    }
+}
 .btn-holder {
     padding: 15px 0 0 0;
+    white-space: nowrap;
     span {
         display: inline-block;
         vertical-align: middle;
@@ -27,10 +62,7 @@
             text-transform: uppercase;
             text-decoration: none;
             color: #fff;
-            background: -moz-linear-gradient(top,  rgba(54,131,199,1) 0%, rgba(7,180,212,1) 89%, rgba(2,186,214,1) 98%, rgba(0,190,216,1) 98%, rgba(0,184,212,1) 99%, rgba(5,185,212,1) 99%, rgba(19,194,223,1) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top,  rgba(54,131,199,1) 0%,rgba(7,180,212,1) 89%,rgba(2,186,214,1) 98%,rgba(0,190,216,1) 98%,rgba(0,184,212,1) 99%,rgba(5,185,212,1) 99%,rgba(19,194,223,1) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom,  rgba(54,131,199,1) 0%,rgba(7,180,212,1) 89%,rgba(2,186,214,1) 98%,rgba(0,190,216,1) 98%,rgba(0,184,212,1) 99%,rgba(5,185,212,1) 99%,rgba(19,194,223,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3683c7', endColorstr='#13c2df',GradientType=0 ); /* IE6-9 */
+            @include gradient-main;
         }
         &:hover {
             opacity: 0.7;
@@ -42,6 +74,7 @@
 @media all and (max-width: 767px) {
     .btn-holder {
         font-size: 12px;
+        white-space: normal;
         span {
             margin: 0 12px;
         }

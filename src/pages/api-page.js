@@ -26,7 +26,6 @@ const ApiPage = () => {
             Description = {mainScreenDatas.Datas[3].Description}
             Image = {mainScreenDatas.Datas[3].Image}
             BgImage ={mainScreenDatas.Datas[3].BgImage}
-            Name = {'page'}
           />
           <Advantages
             subtitle= {title.BlockTitles[7].SubTitle} 

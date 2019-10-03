@@ -21,15 +21,15 @@ const ProductOverview = ({subtitles, descriptions, titles, codes, image}) => {
                     </Col>
                 </Row>
                 <Row className="content">
-                    <Col xs="12" sm="6" md="6">
+                    <Col xs="12" sm="12" md="6">
                         <CodeExample code={codes}/>
                     </Col>
-                    <Col xs="1" sm="1" md="2">
+                    <Col xs="1" sm="12" md="2">
                         <div className="arr">
                             <img src={ARR} alt='img'/>
                         </div>
                     </Col>
-                    <Col xs="12" sm="5" md="4">
+                    <Col xs="12" sm="12" md="4">
                         <div className="visual">
                             <img src={`${require(`../../assets/img/PNG/${image}`)}`} alt='img'/>
                         </div>

@@ -6,8 +6,11 @@ import './advantages.scss';
 const Advantages = ({subtitle, title, AdvantagesList}) => {
     const listAdvantages = AdvantagesList.advantagesList.map((item)=>{
         return (
-            <Col xs="12" sm="6" md='6' key={item.id}>
+            <Col xs="12" sm="12" md='6' key={item.id}>
                 <div className="advantages-holder">
+                    <i className="icon-big">
+                        <img src={`${require(`../../assets/img/SVG/${item.image}`)}`} alt='img'/>
+                    </i>
                     <span className="advantages-title">{item.title}</span>
                     <ul className="advantages-list">
                         {

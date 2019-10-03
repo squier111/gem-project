@@ -24,7 +24,6 @@ const ConnectPage = () => {
             Description = {mainScreenDatas.Datas[2].Description}
             Image = {mainScreenDatas.Datas[2].Image}
             BgImage ={mainScreenDatas.Datas[2].BgImage}
-            Name = {'page'} 
           />
           <ProductOverview
             subtitles= {title.BlockTitles[2].SubTitle} 

@@ -1,3 +1,47 @@
+@import '../../style-resources/mixins.scss';
+
+.onramp-page {
+    .footer{
+        .footer-top {
+            .footer-btn-holder {
+                button {
+                    &.api-key-btn {
+                        color: #fff;
+                        @include gradient-onramp;
+                    }
+                }
+            }
+        }
+    }
+}
+.connect-page {
+    .footer{
+        .footer-top {
+            .footer-btn-holder {
+                button {
+                    &.api-key-btn {
+                        color: #202124;
+                        @include gradient-connect;
+                    }
+                }
+            }
+        }
+    }
+}
+.api-page {
+    .footer {
+        .footer-top {
+            .footer-btn-holder {
+                button {
+                    &.api-key-btn {
+                        color: #fff;
+                        @include gradient-api;
+                    }
+                }
+            }
+        }
+    }
+}
 .footer {
     img {
         max-width: 100%;
@@ -118,6 +162,7 @@
     .footer {
         .footer-top {
             margin-bottom: 39px;
+            align-items: center;
             justify-content: center;
             .footer-btn-holder {
                 text-align: center;

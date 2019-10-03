@@ -47,7 +47,7 @@ class HeaderMain extends Component {
                 <span className="open-btn" onClick={this.toggle}></span>
                 <div className={`collapse-holder ${classnames({ open: this.state.isOpen === true })}`}>
                     <div className="holder">
-                        <span className="close-btn" onClick={this.toggle}></span>
+                        <span className="close-btn" onClick={this.close.bind(this)}></span>
                         <Nav navbar>
                             <UncontrolledDropdown nav inNavbar> 
                                 <DropdownToggle nav caret 

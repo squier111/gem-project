@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import  './code-samples.scss';
-import { Container, Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
+import { Container, Row, Col, TabContent, TabPane, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
 import classnames from 'classnames';
 import HeadSections from '../head-sections';
 import CodeExample from '../code-example';
@@ -11,7 +11,8 @@ class CodeSamples  extends Component {
     
         this.toggle = this.toggle.bind(this);
         this.state = {
-          activeTab: '1'
+          activeTab: '1',
+          active: -1,
         };
     }
     
@@ -23,23 +24,33 @@ class CodeSamples  extends Component {
         }
     }
 
-    list = this.props.codelist.map((item)=>{
+    toggleCollapse(index) {
+        const current = this.state.active === index ? -1 : index;
+        this.setState(() => ({ active: current }));
+    }
+
+
+    list = (active) => this.props.codelist.map((item, index)=>{
+        console.log(active)
         return (
-            <div key={item.id} className="item">
-                <div className="head">
+            <div key={item.id} className={`item ${classnames({ active: index === active})}`}>
+                <div className="head" onClick={()=> this.toggleCollapse(index)}>
                     <h3>{item.Title}</h3>
                     <div className="info-box">
                         <span className={`type ${classnames({ get: item.Type=== 'Get' })}`}>{item.Type}</span>
                         <span>{`/${item.Info}`}</span>
                     </div>
                 </div>
-                <p>{item.Text}</p>
+                <div className="text">
+                    <p>{item.Text}</p>
+                </div>
             </div>
         )
     })
 
     
     render() {
+        console.log(this.state.active)
         return (
             <div className="code-samples" 
                 style = {{
@@ -55,12 +66,12 @@ class CodeSamples  extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs="12" sm="6" md="6">
+                            <Col xs="12" sm="12" md="6">
                                 <div className="description-list">
-                                    {this.list}
+                                    {this.list(this.state.active)}
                                 </div>
                             </Col>
-                            <Col xs="12" sm="6" md="6">
+                            <Col xs="12" sm="12" md="6">
                                 <Nav tabs>
                                     <NavItem>
                                         <NavLink
