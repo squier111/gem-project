@@ -3,6 +3,7 @@ import './header.scss';
 import {Link, NavLink} from 'react-router-dom'
 import {LOGO} from '../../assets/Icons';
 import classnames from 'classnames';
+import { withRouter } from "react-router";
 import {
     Collapse,
     Navbar,
@@ -14,7 +15,7 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 
-class Header extends Component {
+class HeaderMain extends Component {
     constructor(props) {
         super(props);
         this.toggle = this.toggle.bind(this);
@@ -22,25 +23,38 @@ class Header extends Component {
           isOpen: false
         };
       }
-      toggle() {
+    toggle() {
         this.setState({
-          isOpen: !this.state.isOpen
+          isOpen: true
+        });
+    }
+    close() {
+        this.setState({
+          isOpen: false
         });
     }
     render() {
+        this.props.history.listen((location, action) => {
+            this.close()
+        });
+        console.log(this.props.location.pathname)
         return <div className="header">
             <div className="center">
             <Navbar light expand="md">
-                <Link  to='/' className="logo-holder">
+                <Link  to='/' className="logo-holder" onClick={this.close.bind(this)}>
                     <img src={LOGO} alt='logo' className='logo'/>
                 </Link>
                 <span className="open-btn" onClick={this.toggle}></span>
-                <div className={`collapse-holder ${classnames({ open: this.state.isOpen === true })}`} isOpen={this.state.isOpen}>
+                <div className={`collapse-holder ${classnames({ open: this.state.isOpen === true })}`}>
                     <div className="holder">
                         <span className="close-btn" onClick={this.toggle}></span>
                         <Nav navbar>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
+                            <UncontrolledDropdown nav inNavbar> 
+                                <DropdownToggle nav caret 
+                                    className={
+                                        `${classnames({ active: this.props.location.pathname === '/connect' ||
+                                                                this.props.location.pathname === '/onramp' ||
+                                                                this.props.location.pathname === '/api' })}`}>
                                     Products
                                 </DropdownToggle>
                                 <DropdownMenu right>
@@ -84,5 +98,7 @@ class Header extends Component {
         </div>
     }
 }
+
+const Header = withRouter(HeaderMain);
 
 export default Header;

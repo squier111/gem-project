@@ -1,6 +1,13 @@
 @import '../../style-resources/mixins.scss';
 
 .header {
+    .dropdown-toggle {
+        @include transition;
+        &.active,
+        &:hover {
+            color: #00BBD7!important;
+        }
+    }
     .open-btn  {
         top: 5px;
         right: 2px;
@@ -243,6 +250,9 @@
             }
         }
         .dropdown-menu {
+            &:after {
+                display: none;
+            }
             background: none;
             box-shadow: none;
             margin: 0;
