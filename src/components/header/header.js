@@ -87,7 +87,9 @@ class HeaderMain extends Component {
                                 <NavLink exact={true} to='/pricing' className="link">Pricing</NavLink>
                             </NavItem>
                         </Nav>
-                        <div className="user-panel ml-auto">
+                        <div className={ `user-panel ml-auto ${classnames({ white: 
+                                                                this.props.location.pathname === '/onramp' ||
+                                                                this.props.location.pathname === '/api' })}`}>
                             <button className="sign-in-btn">Sign In</button>
                             <button className="api-key-btn">Get API Keys →</button>
                         </div>

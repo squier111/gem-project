@@ -73,8 +73,11 @@
         .footer-btn-holder {
             display: inline-block;
             button {
+                @include transition;
                 min-height: 60px;
+                position: relative;
                 background: none;
+                z-index: 2;
                 font: 14px/14px 'Faktum Test Bold', sans-serif;
                 border:none;
                 background: #FCA703;
@@ -90,6 +93,16 @@
                     min-width: 218px;
                     background: none;
                     border: 2px #fff solid;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &:active {
+                    outline: none;
+                    top: -3px;
                 }
             }
 

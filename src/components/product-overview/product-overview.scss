@@ -77,7 +77,7 @@
             }
         }
         .arr {
-            margin: 0 0 0 -23px;
+            margin: 0;
             display: inline-block;
             vertical-align: top;
             -moz-transform: rotate(90deg);
@@ -85,6 +85,13 @@
             -o-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
+        }
+    }
+}
+@media all and (max-width: 575px) {
+    .product-overview {
+        .arr {
+            margin: 0 0 0 -23px;
         }
     }
 }

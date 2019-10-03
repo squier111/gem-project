@@ -82,7 +82,14 @@
             color: #202124;
         }
     }
+    .white {
+        button {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
     button {
+        position: relative;
         box-sizing: border-box;
         background: transparent;
         border: 1px solid #202124;
@@ -101,6 +108,16 @@
         }
         &.dropdown-item {
             border: none;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+            top: -3px;
         }
 
     }
@@ -298,8 +315,7 @@
             text-transform: uppercase;
             text-decoration: none;
             color: #fff;
-            background: linear-gradient(to bottom, #3683c7 0%, #07b4d4 89%, #02bad6 98%, #00bed8 98%, #00b8d4 99%, #05b9d4 99%, #13c2df 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3683c7', endColorstr='#13c2df',GradientType=0 );
+            @include gradient-main;
         }
         
     }

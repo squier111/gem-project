@@ -42,7 +42,9 @@
         margin: 0 13px 0 21px;
     }
     button {
+        position: relative;
         @include transition;
+        outline: none;
         min-height: auto;
         background: transparent;
         border: none;
@@ -65,8 +67,16 @@
             @include gradient-main;
         }
         &:hover {
+            outline: none;
             opacity: 0.7;
             border-bottom-color: transparent;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            outline: none;
+            top: -3px;
         }
     }
 }
