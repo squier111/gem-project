@@ -37,7 +37,7 @@ class HeaderMain extends Component {
         this.props.history.listen((location, action) => {
             this.close()
         });
-        console.log(this.props.location.pathname)
+        
         return <div className="header">
             <div className="center">
             <Navbar light expand="md">

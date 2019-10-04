@@ -41,9 +41,9 @@ class CodeSamples  extends Component {
                         <span>{`/${item.Info}`}</span>
                     </div>
                 </div>
-                <div className="text">
+                <Collapse isOpen={index === active}>
                     <p>{item.Text}</p>
-                </div>
+                </Collapse>
             </div>
         )
     })

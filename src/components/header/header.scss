@@ -105,6 +105,14 @@
             border-color: transparent;
             min-width: auto;
             letter-spacing: 0.15em;
+            &:active {
+                top: 0;
+            }
+        }
+        &.api-key-btn {
+            &:active {
+                top: 0;
+            }
         }
         &.dropdown-item {
             border: none;
@@ -134,7 +142,7 @@
             border-right: 10px solid transparent;
             border-bottom: 10px solid #fff;
         }
-        box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.2);
+        @include box-shadow;
         right: auto;
         left: 0;
         margin: 0 0 0 -129px;
@@ -161,6 +169,7 @@
                 content: "";
 
             }
+            @include transition;
             outline: none;
             cursor: pointer;
             white-space: normal;
@@ -177,6 +186,9 @@
                 background: none;
                 cursor: pointer;
                 text-decoration: none;
+            }
+            &:active {
+                top: 0;
             }
         }
     }
@@ -231,7 +243,7 @@
             &.open {
                 right: 0px;
             }
-            box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.2);
+            @include box-shadow;
             @include transition-right;
             display: block;
             background: #fff;
@@ -307,7 +319,7 @@
         button.api-key-btn {
             min-height: 60px;
             font: 14px/14px 'Faktum Test Bold', sans-serif;
-            box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.2);
+            @include box-shadow;
             border-radius: 5px;
             letter-spacing: 0.11em;
             min-width: 181px;

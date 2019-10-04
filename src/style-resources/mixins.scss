@@ -38,6 +38,8 @@
     background: -webkit-linear-gradient(left,  rgba(233,60,46,1) 0%,rgba(229,56,42,1) 7%,rgba(231,58,44,1) 13%,rgba(231,58,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  rgba(233,60,46,1) 0%,rgba(229,56,42,1) 7%,rgba(231,58,44,1) 13%,rgba(231,58,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e93c2e', endColorstr='#e73a2c',GradientType=1 ); /* IE6-9 */
-
-
+}
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.2);
 }

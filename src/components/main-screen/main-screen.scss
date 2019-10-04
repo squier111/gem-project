@@ -102,6 +102,15 @@
             }
         }
     }
+    .pricing-page {
+        .main-screen {
+            min-height: auto;
+            padding: 125px 0 27px 0;
+            .visual {
+                display: none;
+            }
+        }
+    }
     .onramp-page,
     .connect-page,
     .api-page {

@@ -117,9 +117,15 @@
     pre[class*="language-"] {
         min-height: 544px;
     }
+    .collapse:not(.show) {
+        display: block;
+    }
 }
 @media all and (max-width: 767px) {
     .code-samples {
+        .collapse:not(.show) {
+            display: none;
+        }
         min-height: auto;
         padding: 86px 0 100px 0;
         border-top: 1px #DCE0E3 solid;
@@ -172,8 +178,7 @@
                 padding: 16px 52px 11px 16px;
                 border-radius: 7px;
                 background: #fff;
-                -webkit-box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.1);
-                box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.1);
+                @include box-shadow;
             }
             p {
                 text-align: center;

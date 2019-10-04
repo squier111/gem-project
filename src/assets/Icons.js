@@ -7,6 +7,7 @@ export { default as VAULT } from './img/SVG/icon-big-vault.svg'
 export { default as CIRCLE } from './img/SVG/icon-circle.svg'
 export { default as DATAICONS } from './img/SVG/icons-data.svg'
 export { default as SYMBOLS } from './img/SVG/icon-symbols.svg'
+export { default as NOITEM } from './img/SVG/no-item.svg'
 
 
 
