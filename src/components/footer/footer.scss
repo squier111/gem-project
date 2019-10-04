@@ -178,27 +178,7 @@
             align-items: center;
             justify-content: center;
             .footer-btn-holder {
-                text-align: center;
-                padding: 20px 0 0 0;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                button {
-                    -webkit-order: 1;
-                    -ms-flex-order: 1;
-                    order: 1;
-                    margin: 0 10px 22px 10px;
-                    &.pricing-btn {
-                        -webkit-order: 2;
-                        -ms-flex-order: 2;
-                        order: 2;
-                    }
-                    &.api-key-btn {
-                        -webkit-order: 1;
-                        -ms-flex-order: 1;
-                        order: 1;
-                    }
-                }
+                padding: 10px 0;
             }
         }
         .footer-bot {
@@ -224,6 +204,29 @@
             justify-content: center;
         }
         .footer-top {
+            .footer-btn-holder {
+                text-align: center;
+                padding: 20px 0 0 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                button {
+                    -webkit-order: 1;
+                    -ms-flex-order: 1;
+                    order: 1;
+                    margin: 0 10px 22px 10px;
+                    &.pricing-btn {
+                        -webkit-order: 2;
+                        -ms-flex-order: 2;
+                        order: 2;
+                    }
+                    &.api-key-btn {
+                        -webkit-order: 1;
+                        -ms-flex-order: 1;
+                        order: 1;
+                    }
+                }
+            }
             .footer-title {
                 text-align: center;
                 font-size: 50px;
