@@ -1,3 +1,5 @@
+@import '../../style-resources/variables.scss';
+
 .wrapper {
 	overflow: hidden;
 }
@@ -60,17 +62,17 @@
 }
 .onramp-page {
 	span.subtitle {
-        color: #DA1260;
+        color: $onramp-page-color;
     }
 }
 .connect-page {
 	span.subtitle {
-        color: #848C12;
+        color: $connect-page-color;
     }
 }
 .api-page {
 	span.subtitle {
-        color: #E7382D;
+        color: $api-page-color;
     }
 }
 

@@ -1,4 +1,5 @@
 @import '../../style-resources/mixins.scss';
+@import '../../style-resources/variables.scss';
 
 .onramp-page {
     .footer{
@@ -20,7 +21,7 @@
             .footer-btn-holder {
                 button {
                     &.api-key-btn {
-                        color: #202124;
+                        color: $title-color;
                         @include gradient-connect;
                     }
                 }
@@ -87,7 +88,7 @@
                 margin: 0 0 0 20px;
                 text-transform: uppercase;
                 text-decoration: none;
-                color: #202124;
+                color: $title-color;
                 &.pricing-btn {
                     color: #fff;
                     min-width: 218px;
@@ -117,7 +118,7 @@
     }
     .subtitle {
         font-size: 11px;
-        color: #01BBD5;
+        color: $main-page-color;
         margin: 0 0 12px;
         line-height: 17px;
     }

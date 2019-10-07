@@ -1,4 +1,5 @@
 @import '../../style-resources/mixins.scss';
+@import '../../style-resources/variables.scss';
 
 .product-overview-main {
     img {
@@ -61,7 +62,7 @@
         }
         .item2 {
             h3, .read-more  {
-                color: #848C12;
+                color: $connect-page-color;
             }
         }
         .item3 {
@@ -86,7 +87,7 @@
         p {
             font-size: 14px;
             line-height: 19px;
-            color: #50565A;
+            color: $text-color;
             margin: 0 24px 3px 0;
         }
     }

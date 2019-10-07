@@ -1,10 +1,12 @@
+@import '../../style-resources/variables.scss';
+
 .companys {
     padding: 0 0 69px;
     h2 {
         text-align: center;
     }
     .subtitle {
-        color: #01BBD5;
+        color: $main-page-color;
         width: 100%;
         display: block;
         text-align: center;

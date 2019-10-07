@@ -1,4 +1,6 @@
 @import '../../style-resources/mixins.scss';
+@import '../../style-resources/variables.scss';
+
 .api-page .code-samples {
     background: none!important;
     min-height: auto;
@@ -64,7 +66,7 @@
             p {
                 font-size: 14px;
                 line-height: 16px;
-                color: #50565A;
+                color: $text-color;
                 margin: 0;
             }
             padding: 18px 29px 19px 20px;
@@ -92,6 +94,8 @@
     }
     .nav-tabs {
         margin: 0 0 0 15px;
+        position: relative;
+        z-index: 1;
     }
     .tab-content {
         margin: -7px 0px 0 15px;
@@ -123,6 +127,12 @@
 }
 @media all and (max-width: 767px) {
     .code-samples {
+        .nav-tabs {
+            margin: 0;
+        }
+        .tab-content {
+            margin: -7px 0px 0 0;
+        }
         .collapse:not(.show) {
             display: none;
         }
@@ -174,13 +184,14 @@
                 }
             }
             .head {
-                margin: 0 0 10px;
+                margin: 0;
                 padding: 16px 52px 11px 16px;
                 border-radius: 7px;
                 background: #fff;
                 @include box-shadow;
             }
             p {
+                padding: 10px 0 0 0;
                 text-align: center;
                 font-size: 16px;
                 line-height: 22px;

@@ -1,9 +1,11 @@
 @import '../../style-resources/mixins.scss';
+@import '../../style-resources/variables.scss';
+
 .onramp-page {
     .btn-holder {
         button {
-            color: #DA1260;
-            border-bottom: 1px solid #DA1260;
+            color: $onramp-page-color;
+            border-bottom: 1px solid $onramp-page-color;
             &.api-key-btn {
                 @include gradient-onramp;
             }
@@ -13,10 +15,10 @@
 .connect-page {
     .btn-holder {
         button {
-            color: #848C12;
-            border-bottom: 1px solid #848C12;
+            color: $connect-page-color;
+            border-bottom: 1px solid $connect-page-color;
             &.api-key-btn {
-                color: #202124;
+                color: $title-color;
                 @include gradient-connect;
             }
         }
@@ -25,8 +27,8 @@
 .api-page {
     .btn-holder {
         button {
-            color: #E7382D;
-            border-bottom: 1px solid #E7382D;
+            color: $api-page-color;
+            border-bottom: 1px solid $api-page-color;
             &.api-key-btn {
                 @include gradient-api;
             }
@@ -48,9 +50,9 @@
         min-height: auto;
         background: transparent;
         border: none;
-        color: #01BBD5;
+        color: $main-page-color;
         padding: 0;
-        border-bottom: 1px solid #01BBD5;
+        border-bottom: 1px solid $main-page-color;
         letter-spacing: 0.1em;
         &.api-key-btn {
             min-height: 60px;

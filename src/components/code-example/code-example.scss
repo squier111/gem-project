@@ -1,3 +1,4 @@
+
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background: #1d446b !important;
     margin: 0 !important;
@@ -7,6 +8,7 @@
 }
 pre[class*="language-"] {
     max-height: 510px;
+    padding-top: 20px;
     border-radius: 7px;
     box-shadow: 1px 35px 19px -7px rgba(0, 0, 0, 0.2);
 }
@@ -26,4 +28,26 @@ pre[class*="language-"] {
 .token.builtin,
 .token.inserted {
     color: #F4F6F8 !important;
+}
+.prism-code {
+    text-align: left;
+    position: relative;
+    &:after {
+        content:'';
+        position: absolute;
+        background: rgba(19, 45, 70, 0.36);
+        left: 0;
+        width: 35px;
+        bottom: 0;
+        top: 0;
+    }
+    .num {
+        width: 35px;
+        overflow: hidden;
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 15px 0 0;
+    }
 }

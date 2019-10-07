@@ -1,4 +1,5 @@
 @import '../../style-resources/mixins.scss';
+@import '../../style-resources/variables.scss';
 
 .header {
     .dropdown-toggle {
@@ -42,7 +43,7 @@
     width: 100%;
     .navbar-expand-md .navbar-nav .nav-link {
         padding: 0;
-        color: #202124;
+        color: $title-color;
     }
     .logo {
         margin: -1px 0 0 0;
@@ -79,7 +80,7 @@
         }
         a {
             padding: 0;
-            color: #202124;
+            color: $title-color;
         }
     }
     .white {
@@ -92,7 +93,7 @@
         position: relative;
         box-sizing: border-box;
         background: transparent;
-        border: 1px solid #202124;
+        border: 1px solid $title-color;
         min-height: 41px;
         font-size: 12px;
         min-width: 147px;
@@ -162,7 +163,7 @@
             font-size: 12px;
             line-height: 16px;
             text-transform: none;
-            color:#50565A;
+            color:$text-color;
         }
         button {
             &:before {
@@ -178,7 +179,7 @@
             padding: 11px 0 10px;
             text-decoration: none;
             a {
-                color:#50565A;
+                color:$text-color;
                 display: block;
                 text-decoration: none;
             }
@@ -308,7 +309,7 @@
         }
         button.sign-in-btn {
             display: block;
-            color: #01BBD5;
+            color: $main-page-color;
             font-size: 40px;
             line-height: 42px;
             padding: 0;

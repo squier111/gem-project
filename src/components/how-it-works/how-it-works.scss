@@ -1,3 +1,4 @@
+@import '../../style-resources/variables.scss';
 
 .how-it-works {
     padding: 0 0 152px;
@@ -24,7 +25,7 @@
                 }
             }
             text-align: center;
-            background: #f5f6f8;
+            background: $background-color;
             &:last-child {
                 .visual {
                     &:before  {
@@ -56,7 +57,7 @@
                 }
                 display: inline-block;
                 z-index: 20;
-                background: #f5f6f8;
+                background: $background-color;
                 z-index: 2;
                 padding: 0 25px;
                 position: relative;

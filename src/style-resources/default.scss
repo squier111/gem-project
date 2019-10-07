@@ -1,3 +1,4 @@
+@import './variables.scss';
 
 html {
 	height: 100%;
@@ -6,18 +7,14 @@ html {
 html, body {
 	height: 100%;
 	margin:0;
-	color:#797E82;
+	color:$text-color;
 	font: 15px/24px 'Faktum Test Regular', sans-serif;
-	background:#f5f6f8;
+	background:$background-color;
 	min-width: 320px;
 }
 img {
 	border-style:none;
 	vertical-align: top;
-}
-a {
-	color:#222;
-	outline:none;
 }
 a:hover {
 	text-decoration:underline;
@@ -40,25 +37,25 @@ form, fieldset {
 }
 h1 {
 	font: 60px/60px 'Faktum Test Bold', sans-serif;
-    color: #202124;
+    color: $title-color;
     margin: 0 0 16px;
     letter-spacing: -0.025em;
 }
 h2 {
 	font: 40px/44px 'Faktum Test Bold', sans-serif;
-	color: #202124;
+	color: $title-color;
 	letter-spacing: -0.02em;
 	margin: 0 0 10px;
 }
 h3 {
 	font: 18px/22px 'Faktum Test Bold', sans-serif;
-	color: #202124;
+	color: $title-color;
 	margin: 0 0 10px;
 }
 h4 {
 	text-transform: uppercase;
 	font: 18px/22px 'Faktum Test Bold', sans-serif;
-	color: #202124;
+	color: $title-color;
 	letter-spacing: 0.06em;
 	margin: 0 0 3px;
 }
@@ -66,7 +63,7 @@ p {
 	font: 16px/24px 'Faktum Test Regular', sans-serif;
 	margin: 0 0 25px;
     padding: 0;
-    color: #50565A;
+    color: $text-color;
 }
 span.subtitle {
 	margin: 0 0 21px;
@@ -74,13 +71,14 @@ span.subtitle {
 	font-family: 'PT Mono', monospace;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #50565A;
+	color: $text-color;
 	font-size: 11px;
 	letter-spacing: 0.2em;
 	line-height: 13px;
 }
 a {
-	color: #50565A;
+	outline:none;
+	color: $text-color;
 }
 img {
 	max-width: 100%;
@@ -123,9 +121,7 @@ textarea:focus::-moz-placeholder {
  color:transparent!important;
 }
 strong {
-	font-family: 'proxima_nova_rgbold', sans-serif;
+	font-family: 'Faktum Test Bold', sans-serif;
 }
-
-
 
 @import './responsive.scss';
