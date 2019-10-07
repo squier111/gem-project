@@ -4,9 +4,14 @@
 .header {
     .dropdown-toggle {
         @include transition;
-        &.active,
+        a {
+            border-bottom: none;
+        }
         &:hover {
             color: #00BBD7!important;
+        }
+        &.active {
+            border-bottom: 1px #00BBD7 solid;
         }
     }
     .open-btn  {
@@ -64,13 +69,14 @@
             letter-spacing: 0.08em;
             text-transform: uppercase;
             .link {
+                border-bottom: 1px transparent solid;
                 @include transition;
                 text-decoration: none;
-                &.active {
-                    color: #00BBD7;
-                }
                 &:hover {
                     color: #00BBD7;
+                }
+                &.active {
+                    border-bottom: 1px #00BBD7 solid;
                 }
             }
         }
@@ -181,7 +187,9 @@
             a {
                 color:$text-color;
                 display: block;
+                border-bottom-color: transparent !important;
                 text-decoration: none;
+
             }
             &:hover {
                 background: none;
@@ -205,6 +213,32 @@
 
 @media all and (max-width: 767px) {
     .header {
+        .dropdown-toggle {
+            &:hover {
+                color: #202124;
+            }
+            &.active {
+                color: #00BBD7!important;
+                border:none;
+            }
+        }
+        .navbar-nav {
+            li {
+                .link {
+                    &:hover {
+                        color: #202124;
+                    }
+                    &.active:hover {
+                        border: none;
+                        color: #00BBD7;
+                    }
+                    &.active {
+                        border: none;
+                        color: #00BBD7;
+                    }
+                }
+            }
+        }
        .logo-holder {
            width: 122px;
            img {

@@ -118,9 +118,6 @@
     .info {
         margin: 0 0 0 -12px;
     }
-    pre[class*="language-"] {
-        min-height: 544px;
-    }
     .collapse:not(.show) {
         display: block;
     }
@@ -213,7 +210,6 @@
         }
        }
        pre[class*="language-"] {
-            min-height: 300px;
             max-height: 370px;
         } 
     }

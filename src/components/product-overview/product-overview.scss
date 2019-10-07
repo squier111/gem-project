@@ -50,9 +50,6 @@
 @media all and (max-width: 767px) {
 	.product-overview {
         padding: 0 0 67px;
-        pre[class*="language-"] {
-            min-height: 300px;
-        }
         .head {
             &> div {
                 padding: 0;
