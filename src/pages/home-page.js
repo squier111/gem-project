@@ -15,7 +15,7 @@ const items =  ListItem.items.slice(0, 3);
 
 const HomePage = () => {
   return (
-    <div className="home-page line-numbers ">
+    <div className="home-page">
         <Mainscreen
           Subtitle= {mainScreenDatas.Datas[0].Subtitle}
           Title = {mainScreenDatas.Datas[0].Title}
