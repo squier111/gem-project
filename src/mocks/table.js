@@ -59,7 +59,7 @@ export default class TableMocks {
         btn: "Get Started →",
       },
       {
-        id: 3,
+        id: 4,
         title: "Enterprise",
         subtitle: "Let’s Talk",
         buy: "Unlimited",
